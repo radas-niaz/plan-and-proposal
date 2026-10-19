@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Project Plan and Proposal: Cultural Differences in Communication</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1b2433; --muted:#5a6679; --line:#d9dfe7; --paper:#ffffff; --bg:#eef2f6;
+  --teal:#0f766e; --teal-soft:#e2f2f0; --navy:#1d2b4a; --flag:#fff0b8;
+  --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --sans:"Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 var(--serif)}
+.hero{background:var(--navy);color:#fff;padding:64px 24px 56px}
+.hero-in{max-width:900px;margin:0 auto}
+.hero p.meta{font:500 14px/1.5 var(--sans);color:#b9c6e0;margin:0 0 18px}
+.hero h1{font:700 clamp(32px,6vw,54px)/1.1 var(--serif);margin:0 0 18px;letter-spacing:-.01em}
+.hero p.sub{font:400 18px/1.6 var(--sans);color:#d6deef;max-width:640px;margin:0}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.chip{font:500 13px var(--sans);background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);padding:6px 12px;border-radius:999px}
+nav{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:1px solid var(--line)}
+nav ul{max-width:900px;margin:0 auto;padding:0 24px;list-style:none;display:flex;gap:6px;overflow-x:auto}
+nav a{display:block;padding:14px 12px;font:500 14px var(--sans);color:var(--muted);text-decoration:none;border-bottom:2px solid transparent;white-space:nowrap}
+nav a:hover,nav a:focus-visible{color:var(--teal);border-color:var(--teal);outline:none}
+main{max-width:900px;margin:32px auto 64px;padding:0 16px}
+section{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:40px clamp(20px,5vw,56px);margin-bottom:28px}
+h2{font:700 30px/1.2 var(--serif);margin:0 0 6px;color:var(--navy)}
+.lead{font:400 15px/1.5 var(--sans);color:var(--muted);margin:0 0 28px}
+h3{font:600 19px/1.3 var(--sans);margin:30px 0 8px;color:var(--teal)}
+p{margin:0 0 14px;max-width:68ch}
+.summary{background:var(--teal-soft);border-left:4px solid var(--teal);padding:18px 22px;border-radius:0 8px 8px 0;margin-bottom:8px}
+.summary p{margin:0}
+ol.outline{padding-left:22px;margin:0}
+ol.outline li{margin-bottom:10px;padding-left:4px}
+ol.outline b{font-family:var(--sans);font-weight:600}
+table{width:100%;border-collapse:collapse;font:15px/1.5 var(--sans);margin:8px 0 6px}
+th,td{text-align:left;vertical-align:top;padding:12px 14px;border-bottom:1px solid var(--line)}
+th{background:#f3f6f9;font-weight:600;color:var(--navy)}
+.tablewrap{overflow-x:auto}
+.q{display:grid;grid-template-columns:36px 1fr;gap:10px;margin-bottom:14px;align-items:start}
+.q span{width:28px;height:28px;border-radius:50%;background:var(--navy);color:#fff;font:600 14px/28px var(--sans);text-align:center}
+.q p{margin:0}
+.rules{list-style:none;margin:0;padding:0;counter-reset:r}
+.rules li{counter-increment:r;position:relative;padding:16px 0 16px 48px;border-bottom:1px solid var(--line)}
+.rules li:last-child{border-bottom:0}
+.rules li::before{content:counter(r);position:absolute;left:0;top:16px;width:30px;height:30px;border-radius:50%;background:var(--teal);color:#fff;font:600 14px/30px var(--sans);text-align:center}
+.rules strong{display:block;font:600 16px var(--sans);margin-bottom:2px}
+.rules span{color:#35405a}
+.note{font:14px/1.5 var(--sans);color:var(--muted);background:#f7f9fb;border:1px dashed var(--line);padding:12px 16px;border-radius:8px;margin-top:20px}
+.fill{background:var(--flag);padding:0 4px;border-radius:3px}
+.ref{padding-left:2em;text-indent:-2em;margin-bottom:12px}
+.tip{max-width:900px;margin:18px auto 0;padding:0 24px;font:14px var(--sans);color:#b9c6e0}
+footer{text-align:center;font:13px var(--sans);color:var(--muted);padding:0 0 40px}
+a:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+@media print{
+  body{background:#fff;font-size:12pt}
+  .hero{background:#fff;color:#000;padding:0 0 12pt}
+  .hero p.meta,.hero p.sub{color:#333}.chip{border-color:#999;color:#000;background:none}
+  nav,.tip,footer{display:none}
+  section{border:0;padding:0;margin-bottom:18pt;break-inside:auto}
+  tr,.q,.rules li{break-inside:avoid}
+  .fill{background:none;border-bottom:1px dotted #000}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-in">
+    <p class="meta">Project Plan and Proposal </h1>
+    <p class="sub">A team proposal for a practical guide to cultural differences in communication, with a plan for how we will work together to finish it.</p>
+    <div class="chips">
+      <span class="chip">Topic: Cultural Differences in Communication</span>
+      <span class="chip">Deliverable: Educational guide</span>
+      <span class="chip">Target: A level project</span>
+    </div>
+  </div>
+  <p class="tip"></p>
+</header>
+
+<nav aria-label="Sections">
+  <ul>
+    <li><a href="#proposal">1. Proposal</a></li>
+    <li><a href="#plan">2. Team plan</a></li>
+    <li><a href="#rules">3. Ground rules</a></li>
+  </ul>
+</nav>
+
+<main>
+
+<section id="proposal">
+  <h2>Part 1: Proposal</h2>
+  <p class="lead">What we plan to research and make.</p>
+
+  <h3>Summary</h3>
+  <div class="summary">
+    <p>Our team will research how communication styles differ across cultures. We will focus on three areas: direct vs. indirect communication, high-context vs. low-context cultures, and verbal vs. nonverbal differences. Our final deliverable is a short educational guide that teaches readers how to handle these differences with respect. We are aiming for an A-level project.</p>
+  </div>
+
+  <h3>Why we picked this topic</h3>
+  <p>Most of us already work or study with people from different backgrounds. A message that sounds clear to one person can sound rude or vague to another. We want to understand why that happens and what to do about it.</p>
+  <p>The topic also lets us practice the 11 communication strategies in real situations. Clarifying, Questioning, and Repairing fit most directly. We will also practice Investigating, because we have to find good sources and judge them. Working as a team on a project about communication means we will be using these skills as we go.</p>
+
+  <h3>Final deliverable</h3>
+  <p>We will make a 6 to 8 page illustrated guide called <em>Say It So They Get It: A Practical Guide to Cross Cultural Communication</em>. We chose a guide because it can do two jobs. It explains what the research says, and it shows readers what to do about it.</p>
+  <p>The guide will hold our summaries, comparison charts, original examples, and strategy tips in one place. We’ll create it in Google Docs first, then convert it into HTML.</p>
+
+  <h3>Tentative outline</h3>
+  <ol class="outline">
+    <li><b>Introduction.</b> Why culture changes the way we communicate.</li>
+    <li><b>Direct vs. indirect communication.</b> What each looks like, with a comparison chart.</li>
+    <li><b>High-context vs. low-context cultures.</b> Key ideas and where they show up.</li>
+    <li><b>Verbal vs. nonverbal differences.</b> Tone, silence, eye contact, gestures, and personal space.</li>
+    <li><b>Where things go wrong.</b> A comparison of the challenges each difference creates.</li>
+    <li><b>Our original examples.</b> One short scenario for each of the three areas.</li>
+    <li><b>The 11 strategies in action.</b> How strategies like Clarifying, Questioning, and Repairing help us handle these differences.</li>
+    <li><b>Quick tips and references.</b> A one-page takeaway for readers, then our sources.</li>
+  </ol>
+
+<section id="plan">
+  <h2>Part 2: Team plan</h2>
+  <p class="lead">How we will talk, who does what, and when we meet.</p>
+
+
+<h3>Communication Channels</h3>
+
+<p>
+  <strong style="font-family:var(--sans); font-weight:600;">Group Chat – WhatsApp</strong><br>
+  We use WhatsApp for quick questions and reminders because everyone already checks it regularly.
+</p>
+
+<p>
+  <strong style="font-family:var(--sans); font-weight:600;">Shared Online Document – Google Docs</strong><br>
+  All drafting happens in Google Docs so we can collaborate and always work from the same version.
+</p>
+
+<p>
+  <strong style="font-family:var(--sans); font-weight:600;">Meetings</strong><br>
+  We will meet online or in person at least once for each project assignment. Our regular meeting is every Monday at 4:00 PM to finalize this proposal.
+</p>
+
+
+  Here’s the updated HTML with all four team members assigned to their roles and reasons.
+
+
+<h3>Roles and Tasks</h3>
+
+<div class="tablewrap">
+  <table>
+    <thead>
+      <tr>
+        <th>Role</th>
+        <th>Who</th>
+        <th>Why this role, and why this person</th>
+        <th>Tasks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Submitter</strong></td>
+        <td>Joel</td>
+        <td>Joel is careful with details, which helps make sure the final file is correct and submitted properly.</td>
+        <td>
+          Confirm with the team that the file is ready.<br>
+          Check the instructions for formatting rules.<br>
+          Upload the file to the correct dropbox.
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Deadline Keeper</strong></td>
+        <td>Sened</td>
+        <td>Sened is organized with schedules and can help the team stay on track with deadlines.</td>
+        <td>
+          Add every due date to a shared calendar.<br>
+          Send reminders 3 days and 1 day before each deadline.
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Instructor Contact</strong></td>
+        <td>Mahad</td>
+        <td>Mahad is comfortable asking questions, which helps the team get clear answers from the instructor.</td>
+        <td>
+          Collect the team's questions.<br>
+          Send them to the instructor.<br>
+          Share the replies with the team.
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Editor</strong></td>
+        <td>Zain</td>
+        <td>Zain has strong writing skills and can help make the final work clear, consistent, and professional.</td>
+        <td>
+          Check APA citations.<br>
+          Proofread for grammar and clarity.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p class="note">
+  Each team member is responsible for completing their assigned tasks and communicating with the group.
+</p>
+
+</section>
+
+<section id="rules">
+  <h2>Part 3: Team ground rules</h2>
+  <p class="lead">What we expect from each other. We will use these to check in on ourselves in the Progress Update and Team Review.</p>
+
+  <ol class="rules">
+    <li><strong>Reply to team messages within 24 hours.</strong><span>Silence slows everyone down. Quick replies keep us in the loop.</span></li>
+    <li><strong>Tell the team early if you will miss a meeting or deadline.</strong><span>Early notice lets us move work around instead of scrambling.</span></li>
+    <li><strong>Finish your tasks by the agreed date.</strong><span>Our grade depends on everyone's part, so we treat deadlines as promises.</span></li>
+    <li><strong>Be respectful when we disagree.</strong><span>We talk about ideas, not people, and we listen before we respond. This matters even more on a project about communication.</span></li>
+    <li><strong>Everyone contributes to every assignment.</strong><span>We split work fairly based on skills and schedules so no one carries the team.</span></li>
+  </ol>
+
+  <p class="note"><strong>If someone breaks a rule:</strong> we check in privately first. If it keeps happening, we bring it to the instructor.</p>
+</section>
+
+</main>
+<footer>Project Plan and Proposal</footer>
+</body>
+</html>
